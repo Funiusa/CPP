@@ -12,9 +12,9 @@ private:
     std :: string phone_number;
     std :: string darkest_secret;
     void printLine(std :: string line) {
-        std :: cout << "|" << std :: right << std :: setw(10);
+        std :: cout << "\x1B[36m|\033[0m" << std :: right << std :: setw(10);
         if (line.size() > 10)
-            std :: cout << line.substr(0, 9) + ".";
+            std :: cout << line.substr(0, 9) + "\x1B[31m.\033[0m";
         else
             std :: cout << line;
     }
