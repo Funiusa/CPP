@@ -13,5 +13,11 @@ void HumanB :: setWeapon(Weapon& weapon) {
 
 void HumanB::attack() {
 	std :: cout << this->m_name
-				<< " attacks with his " << this->m_weapon->getType() << std :: endl;
+			<< " attacks with his " << this->m_weapon->getType() << std :: endl;
+}
+
+void HumanB::attack(std::string enemy) {
+	std :: cout << this->m_name
+			<< " attacks " << enemy
+				<< " with his " << this->m_weapon->getType() << std :: endl;
 }

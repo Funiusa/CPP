@@ -11,6 +11,7 @@ public:
 	Weapon&		m_weapon;
 	HumanA(std::string name, Weapon &mWeapon);
 	~HumanA();
+	void attack();
 	void attack(std :: string enemy);
 };
 
